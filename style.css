@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #eeee;
+    display: flex;
+    min-height: 100vh;
+}
+
+.contenedor{
+    margin: auto;
+    perspective: 700px;
+}
+
+.caja{
+    width: 300px;
+    height: 300px;
+    background: crimson;
+    transition: all 10s;
+   transition-timing-function: linear;
+    transform: rotateX(0deg);
+    transform-style: preserve-3d;
+}
+
+.cara{
+    width: 300px;
+    height: 300px;
+    background: gold;
+    margin: auto;
+
+    transform: rotateY(90deg);
+}
+
+.caja:hover{
+    background: green;
+    transform: rotateY(960deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box{
+    width: 300px;
+    height: 300px;
+    background: #3dccc7;
+    transition: 1000ms;
+    transition-property: background, width, height, transform;
+    transition-timing-function: cubic-bezier(1,-0.57,.12,1.5);
+}
+
+.box:hover{
+    width: 400px;
+    height: 350px;
+    background: #FF6B6B;
+    transform: rotate(-45deg);
+}
